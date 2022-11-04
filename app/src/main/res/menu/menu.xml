@@ -1,4 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+<item android:id="@+id/primary_from_fill_up"
+    android:title="Primary From Fill-up"
+    android:icon="@drawable/ic_baseline_basic_form_24"/>
+    <item android:id="@+id/pay_fees"
+        android:title="How to Pay Fees"
+        android:icon="@drawable/ic_baseline_payments_24"/>
+    <item android:id="@+id/iccr_hlt_inc"
+        android:title="ICCR Health Insurance"
+        android:icon="@drawable/ic_baseline_health_and_safety_24"/>
+    <item android:id="@+id/transport_ticket"
+        android:title="Trasport Plans and Ticket"
+        android:icon="@drawable/ic_baseline_emoji_transportation_24"/>
+    <item android:id="@+id/admission_process"
+        android:title="Admission Process"
+        android:icon="@drawable/ic_baseline_verified_user_24"/>
+    <item android:id="@+id/list_forms"
+        android:title="Different Forms"
+        android:icon="@drawable/ic_baseline_receipt_long_24"/>
+    <item android:id="@+id/frron_process"
+        android:title="FRRO Process"
+        android:icon="@drawable/ic_baseline_accessibility_24"/>
+    <item android:id="@+id/hostel_allot"
+        android:title="Hostel Allocation Process"
+        android:icon="@drawable/ic_baseline_other_houses_24"/>
+    <item android:id="@+id/house_rent"
+        android:title="House Rent Process"
+        android:icon="@drawable/ic_baseline_house_24"/>
+    <item android:id="@+id/foods_in_varanasi"
+        android:title="Foods in Varanasi"
+        android:icon="@drawable/ic_baseline_fastfood_24"/>
+    <item android:id="@+id/tout_varanasi"
+        android:title="Visit Varanasi"
+        android:icon="@drawable/ic_baseline_tour_24"/>
 </menu>
