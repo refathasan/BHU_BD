@@ -10,9 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.google.android.material.navigation.NavigationView
-import com.refathasan.bhu_bd.fragments.ICCRHealthInsuranceFragment
-import com.refathasan.bhu_bd.fragments.PayFeesFragment
-import com.refathasan.bhu_bd.fragments.PrimaryFromFillUpFragment
+import com.refathasan.bhu_bd.fragments.*
 
 class MainActivity : AppCompatActivity() {
     lateinit var drawerLayout: DrawerLayout
@@ -39,6 +37,30 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.iccr_hlt_inc->{
                     loadFragment(ICCRHealthInsuranceFragment())
+                }
+                R.id.transport_ticket->{
+                    loadFragment(TransportAndTicketsFragment())
+                }
+                R.id.admission_process->{
+                    loadFragment(AdmissionProcessFragment())
+                }
+                R.id.list_forms->{
+                    loadFragment(ImportantFormsAndDocumentsFragment())
+                }
+                R.id.frro_process->{
+                    loadFragment(FRROFragment())
+                }
+                R.id.hostel_allot->{
+                    loadFragment(HostelAllotmentFragment())
+                }
+                R.id.house_rent->{
+                    loadFragment(HouseRentFragment())
+                }
+                R.id.foods_in_varanasi->{
+                    loadFragment(FoodsFragment())
+                }
+                R.id.tout_varanasi->{
+                    loadFragment(TourVaranasiFragment())
                 }
             }
             drawerLayout.closeDrawer(GravityCompat.START)
