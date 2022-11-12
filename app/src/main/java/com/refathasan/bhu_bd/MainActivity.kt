@@ -74,14 +74,14 @@ class MainActivity : AppCompatActivity() {
         if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.closeDrawer(GravityCompat.START)
         } else {
-            super.onBackPressed()
+            return onBackPressedDispatcher.onBackPressed()
         }
     }
 
     private fun loadFragment(fragment: Fragment) {
         val fragmentManager: FragmentManager = supportFragmentManager
-        val fragmentTransection: FragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransection.add(R.id.container, fragment)
-        fragmentTransection.commit()
+        val fragmentTransaction: FragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.add(R.id.container, fragment)
+        fragmentTransaction.commit()
     }
 }
